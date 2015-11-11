@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Surfing Paradise</title>
+        <link href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans" rel="stylesheet">        
+        <link href="Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/font-awesome.min.css" rel="stylesheet" />
+        <link href="app/app.css" rel="stylesheet" />
+        <link href="ext-modules/cgFramework/cgFramework.css" rel="stylesheet" />
+        <link href="ext-modules/cgMenu/cgMenu.css" rel="stylesheet" />
+       
+       
+
+        <script src="Scripts/jquery-2.1.4.min.js"></script>
+        <script src="Scripts/angular.min.js"></script>
+
+        <script src="ext-modules/cgMenu/cgMenuModule.js"></script>
+        <script src="ext-modules/cgMenu/cgMenuController.js"></script>
+        <script src="ext-modules/cgMenu/cgMenuDirective.js"></script>
+        <script src="ext-modules/cgMenu/cgMenuItemDirective.js"></script>
+
+        <script src="ext-modules/cgFramework/cgFrameworkModule.js"></script>
+        <script src="ext-modules/cgFramework/cgFrameworkController.js"></script>
+        <script src="ext-modules/cgFramework/cgFrameworkDirective.js"></script>
+        
+        <script src="ext-modules/cgDashboard/cgDashboardModule.js"></script>
+        <script src="app/appModule.js"></script>
+
+    </head>
+    <body class="container-fluid">
+        <!-- pass in title etc as strings using scope in directive -->
+        <!--custom directive cgFramework-->
+        <cg-framework title="Sufing Paradise"
+                      subtitle="Administrative Application"
+                      icon-file="images/surfer.png">
+
+            <!--use transclution to add menu to framework-->
+            <!--custom directive cgMenu-->
+            <cg-menu>
+                <!--custom directive cgMenuItem-->
+                <cg-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cg-menu-item>
+                <cg-menu-item label="Locations" icon="fa-location-arrow" route="location"></cg-menu-item>
+                <cg-menu-item label="Surf Guides" icon="fa-user" route="guides"></cg-menu-item>
+            </cg-menu>
+
+        </cg-framework>
+
+    </body>
+    </html>
+    

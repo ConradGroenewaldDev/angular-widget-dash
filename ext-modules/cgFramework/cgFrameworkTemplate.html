@@ -1,0 +1,27 @@
+﻿<div class="title-bar">
+    <div class="row">
+    <!-- insert logo in left side-->
+        <div class="logo-area col-md-6">
+        <!--add logo-->
+            <img class="icon" ng-src="{{ iconFile }}" />
+         <div class="title-area">
+            <!-- pass through isolat scope -->
+            <p class="logo-title"> {{ title }} </p>
+            <p class="logo-subtitle">{{ subtitle}}</p>
+        </div>
+    </div>
+    <!-- right hand side contols -->
+        <div class="right-side-controls col-md-6">
+            <div>
+                <button class="btn btn-primary">Button 1</button>
+                <button class="btn btn-success">Button 2</button>
+                <button class="btn btn-warning">Button 3</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--add the ng-transclude directive to show menu-->
+<div ng-transclude></div>
+<div style="position: absolute; left: 220px; top: 200px; color: red; font-size: 44px;">
+    {{routeString}}
+</div>

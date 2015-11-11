@@ -1,0 +1,9 @@
+C:\Users\Conrad\Desktop\Framework\bin\Framework.dll.config
+C:\Users\Conrad\Desktop\Framework\bin\Framework.dll
+C:\Users\Conrad\Desktop\Framework\bin\Framework.pdb
+C:\Users\Conrad\Desktop\Framework\bin\Framework.xml
+C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.Resources.resources
+C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.vbproj.GenerateResource.Cache
+C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.dll
+C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.xml
+C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.pdb

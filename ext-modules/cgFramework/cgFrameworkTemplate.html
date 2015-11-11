@@ -1,7 +1,7 @@
 ﻿<div class="title-bar">
     <div class="row">
     <!-- insert logo in left side-->
-        <div class="logo-area col-md-6">
+        <div class="logo-area col-sm-6">
         <!--add logo-->
             <img class="icon" ng-src="{{ iconFile }}" />
          <div class="title-area">
@@ -9,9 +9,18 @@
             <p class="logo-title"> {{ title }} </p>
             <p class="logo-subtitle">{{ subtitle}}</p>
         </div>
+            <!-- button for mobile view -->
+        <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="collapsed-menu pull-right">
+            <button type="button" class="btn nav-button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
     </div>
-    <!-- right hand side contols -->
-        <div class="right-side-controls col-md-6">
+
+
+    <!-- right hand side controls -->
+        <div class="right-side-controls col-sm-6">
             <div>
                 <button class="btn btn-primary">Button 1</button>
                 <button class="btn btn-success">Button 2</button>

@@ -13,6 +13,10 @@ angular.module('cgMenu').directive('cgMenuItem', function () {
         },
         templateUrl: 'ext-modules/cgMenu/cgMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
+            //create the isActive function for side menu arrow
+            scope.isActive = function() {
+                return el === ctrl.getActiveElement();
+            };
             //allow for routing on click function
             el.on('click', function (evt) {
                 evt.stopPropagation();

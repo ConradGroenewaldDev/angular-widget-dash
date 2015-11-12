@@ -4,6 +4,11 @@ angular.module('cgMenu').controller('cgMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
 
+            // create getter for Active side arrow
+            this.getActiveElement = function () {
+                return $scope.activeElement;
+            };
+
             $scope.showMenu = true;
 
             this.setActiveElement = function (el) {

@@ -46,6 +46,13 @@
     margin-right: 10px;
 }
 
+.menu-active-indicator{
+    float: right;
+    color: #ddd;
+    margin-right: 0px;
+    margin-top: 8px;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

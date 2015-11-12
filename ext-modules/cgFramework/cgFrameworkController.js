@@ -6,13 +6,21 @@ angular.module("cgFramework").controller("cgFrameworkController",
             // make responsive menu button visible (ng-if)
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
+            //flag for changing menu display to top
+            $scope.isMenuVertical = true;
 
-            //listen to message from cgMenuController rootScope
+            //listen to message from cgMenuController rootScope (selected event)
             $scope.$on('cg-menu-item-selected-event', function (evt, data){
                 // do the routing from available routers
                 $scope.routeString = data.route;
                 checkWidth();
                 broadcastMenuState();
+            });
+
+            //listen to message from cgMenuController rootScope (menu display change event)
+            $scope.$on('cg-menu-orientation-changed-event', function (evt, data){
+                // do the routing from available routers
+                $scope.isMenuVertical = data.isMenuVertical;
             });
 
             //display menu button on smaller screen sizes

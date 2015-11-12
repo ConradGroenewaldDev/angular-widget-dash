@@ -1,0 +1,13 @@
+<!--transcluded into the cgMenu template-->
+<li class="selectable-item" ng-click="clicked()">
+    <div class="noselect">
+        <i class="fa {{icon}} menu-icon"></i>
+        {{ label }}
+        <!-- add indecator to show menu can toggle -->
+        <i class="fa fa-chevron-left group-indicator-left" ng-class="{'fa-rotate-270': isOpen}"></i>
+    </div>
+</li>
+<!-- sub menu items display here -->
+<div ng-show="isOpen" class="subItem-section">
+    <ul ng-transclude></ul>
+</div>

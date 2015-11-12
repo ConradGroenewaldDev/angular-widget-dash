@@ -19,8 +19,9 @@ angular.module('cgMenu').directive('cgMenuItem', function () {
             };
 
             // create isVertical function for menu items to display and work correctly
+            // check parents to arrange the dropdown menu
             scope.isVertical = function () {
-                return ctrl.isVertical();
+                return ctrl.isVertical() || el.parents('.subItem-section').length > 0;
             };
 
             //allow for routing on click function

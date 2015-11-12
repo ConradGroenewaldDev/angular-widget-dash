@@ -44,7 +44,7 @@ angular.module("cgFramework").controller("cgFrameworkController",
                 $scope.isMenuButtonVisible = !$scope.isMenuVisible;
             };
 
-            //add the cick function for responsive menu
+            //add the click function for responsive menu
             $scope.menuButtonClicked = function () {
                 $scope.isMenuVisible = !$scope.isMenuVisible;
                 // function to communicate back to cgMenu by broadcasting on root scope
@@ -56,7 +56,9 @@ angular.module("cgFramework").controller("cgFrameworkController",
             var  broadcastMenuState = function () {
                 $rootScope.$broadcast('menu-show',
                     {
-                        show: $scope.isMenuVisible
+                        show: $scope.isMenuVisible,
+                        isVertical: $scope.isMenuVertical,
+                        allowHorizontalToggle: !$scope.isMenuButtonVisible
                     });
             };
 

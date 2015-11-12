@@ -4,6 +4,7 @@
     <ul class="menu" ng-transclude></ul>
     <!-- button to allow user to toggle display to top -->
     <a class="btn menu-layout-button"
+       ng-show="allowHorizontalToggle"
        ng-class="{'layout-button-horizontal': !isVertical}"
        ng-click="toggleMenuOrientation()">
         <i class="fa"

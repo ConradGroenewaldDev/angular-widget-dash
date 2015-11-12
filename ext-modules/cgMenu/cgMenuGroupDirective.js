@@ -15,9 +15,15 @@ angular.module('cgMenu').directive('cgMenuGroup', function () {
            scope.closeMenu = function () {
                scope.isopen = false;
            };
+
             //add the click event
            scope.clicked = function () {
                scope.isOpen = !scope.isOpen;
+           };
+
+           // create isVertical function for menu items to display and work correctly
+           scope.isVertical = function () {
+               return ctrl.isVertical();
            };
        }
    };

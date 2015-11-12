@@ -1,7 +1,12 @@
 ﻿<!--menu exists in div and to be UL-->
-<div class="menu-area" ng-show="showMenu">
+<div class="menu-area" ng-show="showMenu" ng-class="{'menu-area-vertical': isVertical,
+ 'menu-area-horizontal': !isVertical}">
     <ul class="menu" ng-transclude></ul>
-    <a class="btn menu-layout-button" ng-click="toggleMenuOrientation()">
-        <i class="fa fa-chevron-up"></i>
+    <!-- button to allow user to toggle display to top -->
+    <a class="btn menu-layout-button"
+       ng-class="{'layout-button-horizontal': !isVertical}"
+       ng-click="toggleMenuOrientation()">
+        <i class="fa"
+                ng-class="{'fa-chevron-up': isVertical, 'fa-chevron-left': !isVertical}"></i>
     </a>
 </div>

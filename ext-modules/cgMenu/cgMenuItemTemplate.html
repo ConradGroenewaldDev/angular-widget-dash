@@ -1,8 +1,12 @@
 ﻿<!--transcluded into the cgMenu template-->
-<li class="selectable-item">
+<li class="selectable-item" ng-class="{'item-horizontal': !isVertical()}">
     <div class="noselect">
+        <!-- show menu item -->
         <i class="fa {{icon}} menu-icon"></i>
         {{ label }}
     </div>
-    <i class="fa fa-2x fa-caret-left menu-active-indicator" ng-if="isActive()"></i>
+    <!-- indicator to active selection -->
+    <!-- ng-if allows indicator to only show when menu is vertical -->
+    <i ng-if="isActive() && isVertical()"
+       class="fa fa-2x fa-caret-left menu-active-indicator" ng-if="isActive()"></i>
 </li>

@@ -19,6 +19,11 @@ angular.module('cgMenu').controller('cgMenuController',
                 $scope.activeElement = el;
             };
 
+            // add isVertical to controller because out of scope
+            this.isVertical = function () {
+                return $scope.isVertical;
+            };
+
             this.setRoute = function (route) {
               //communicate outside the cgMenu control
                 //create unique name as perameter

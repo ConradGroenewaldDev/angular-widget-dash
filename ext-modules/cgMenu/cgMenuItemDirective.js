@@ -17,6 +17,12 @@ angular.module('cgMenu').directive('cgMenuItem', function () {
             scope.isActive = function() {
                 return el === ctrl.getActiveElement();
             };
+
+            // create isVertical function for menu items to display and work correctly
+            scope.isVertical = function () {
+                return ctrl.isVertical();
+            };
+
             //allow for routing on click function
             el.on('click', function (evt) {
                 evt.stopPropagation();

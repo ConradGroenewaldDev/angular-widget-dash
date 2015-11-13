@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("app", ["cgFramework"]);
+angular.module("app", ["ngRoute", "cgFramework"]);

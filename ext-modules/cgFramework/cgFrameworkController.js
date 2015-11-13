@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 angular.module("cgFramework").controller("cgFrameworkController",
-    ['$scope', '$rootScope', '$window', '$timeout',
-        function ($scope, $rootScope, $window, $timeout) {
+    ['$scope', '$rootScope', '$window', '$timeout', '$location',
+function ($scope, $rootScope, $window, $timeout, $location) {
             // make responsive menu button visible (ng-if)
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
@@ -13,6 +13,7 @@ angular.module("cgFramework").controller("cgFrameworkController",
             $scope.$on('cg-menu-item-selected-event', function (evt, data){
                 // do the routing from available routers
                 $scope.routeString = data.route;
+                $location.path(data.route);
                 checkWidth();
                 broadcastMenuState();
             });

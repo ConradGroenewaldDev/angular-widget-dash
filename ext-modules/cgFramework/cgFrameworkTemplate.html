@@ -31,6 +31,6 @@
 </div>
 <!--add the ng-transclude directive to show menu-->
 <div ng-transclude></div>
-<div style="position: absolute; left: 220px; top: 200px; color: red; font-size: 44px;">
-    {{routeString}}
+<!--hold the of the routing-->  
+<div ng-view class="view" ng-class="{'view-full-width': !isMenuVertical || !isMenuVisible}">
 </div>

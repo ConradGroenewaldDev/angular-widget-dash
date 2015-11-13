@@ -16,6 +16,7 @@
         <script src="Scripts/jquery-2.1.4.min.js"></script>
         <script src="Scripts/angular.min.js"></script>
         <script src="Scripts/angular-animate.min.js"></script>
+        <script src="Scripts/angular-route.min.js"></script>
 
         <script src="ext-modules/cgMenu/cgMenuModule.js"></script>
         <script src="ext-modules/cgMenu/cgMenuController.js"></script>
@@ -28,7 +29,14 @@
         <script src="ext-modules/cgFramework/cgFrameworkDirective.js"></script>
         
         <script src="ext-modules/cgDashboard/cgDashboardModule.js"></script>
+
+
         <script src="app/appModule.js"></script>
+        <script src="app/appConfig.js"></script>
+        <script src="app/routeAppConfig.js"></script>
+        <script src="app/directives/spDashboardDirective.js"></script>
+        <script src="app/directives/spGuidesDirective.js"></script>
+        <script src="app/directives/spLocationsDirective.js"></script>
 
     </head>
     <body class="container-fluid">
@@ -43,7 +51,7 @@
             <cg-menu>
                 <!--custom directive cgMenuItem-->
                 <cg-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cg-menu-item>
-                <cg-menu-item label="Locations" icon="fa-location-arrow" route="location"></cg-menu-item>
+                <cg-menu-item label="Locations" icon="fa-location-arrow" route="locations"></cg-menu-item>
                 <cg-menu-item label="Surf Guides" icon="fa-user" route="guides"></cg-menu-item>
                 <!-- add sub menu directive -->
                 <cg-menu-group label="Equipment" icon="fa-gears">

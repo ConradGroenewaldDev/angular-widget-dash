@@ -1,0 +1,30 @@
+<div class="dashboard-header">
+    {{ title }}
+</div>
+<!-- start of actual dashboard -->
+<div gridster="gridsterOpts">
+    <!-- gridster keep all its widgets in an UL -->
+    <ul>
+        <!-- define what we looping through -->
+        <li gridster-item="item" ng-repeat="item in widgets">
+            <!-- widget header -->
+            <div class="widget-header">
+                <span>{{ item.title }}</span>
+                <div class="widget-header-buttons">
+                    <!-- button for settings for the widget -->
+                    <button class="btn btn-default pull right">
+                        <i class="fa fa-remove" />
+                    </button>
+                    <!-- button for removing the widget -->
+                    <button class="btn btn-default pull right">
+                        <i class="fa fa-gear" />
+                    </button>
+                </div>
+            </div>
+            <!-- widget content -->
+            <div class="widget-body">
+
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("cgDashboard", []);
+angular.module("cgDashboard", ["gridster"]);

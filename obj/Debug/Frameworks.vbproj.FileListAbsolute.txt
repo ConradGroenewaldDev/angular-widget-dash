@@ -1,0 +1,2 @@
+C:\Users\Conrad\Desktop\Frameworks\obj\Debug\Frameworks.Resources.resources
+C:\Users\Conrad\Desktop\Frameworks\obj\Debug\Frameworks.vbproj.GenerateResource.Cache

@@ -7,3 +7,12 @@ C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.vbproj.GenerateResource.Ca
 C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.dll
 C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.xml
 C:\Users\Conrad\Desktop\Framework\obj\Debug\Framework.pdb
+C:\Users\Conrad\Downloads\Framework\Framework-master\bin\Framework.dll.config
+C:\Users\Conrad\Downloads\Framework\Framework-master\bin\Framework.dll
+C:\Users\Conrad\Downloads\Framework\Framework-master\bin\Framework.pdb
+C:\Users\Conrad\Downloads\Framework\Framework-master\bin\Framework.xml
+C:\Users\Conrad\Downloads\Framework\Framework-master\obj\Debug\Framework.Resources.resources
+C:\Users\Conrad\Downloads\Framework\Framework-master\obj\Debug\Framework.vbproj.GenerateResource.Cache
+C:\Users\Conrad\Downloads\Framework\Framework-master\obj\Debug\Framework.dll
+C:\Users\Conrad\Downloads\Framework\Framework-master\obj\Debug\Framework.xml
+C:\Users\Conrad\Downloads\Framework\Framework-master\obj\Debug\Framework.pdb
